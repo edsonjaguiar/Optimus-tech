@@ -1,0 +1,382 @@
+/* Reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-transform: capitalize;
+}
+
+/* Global css */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    color: #8e2424;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+h2 {
+    color: #101828;
+    font-weight: 600;
+    font-size: 48px;
+    margin: 24px 0 36px;
+}
+
+.description {
+    color: #667085;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 10rem;
+}
+
+/* Header  */
+
+.navbar {
+    height: 5rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 0 7rem;
+}
+
+.navbar__list {
+    display: flex;
+
+    white-space: nowrap;
+    padding: 0 0 0 4.3rem;
+    width: 100vw;
+}
+
+.navbar__item {
+    padding: 1.5rem;
+}
+
+.navbar__link {
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+}
+
+.navbar__signin {
+    color: gray;
+    font-weight: 500;
+    font-size: 16px;
+    margin-right: 30px;
+}
+
+.navbar__signup {
+    background: #8e2424;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 18px;
+}
+
+.hamburguer {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* Home */
+.hero__text {
+    text-align: center;
+    margin: 96px;
+}
+
+.hero__text h2 {
+    color: #101828;
+    font-weight: 600;
+    font-size: 48px;
+    margin: 24px 0 36px;
+}
+
+.description {
+    color: #667085;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 10rem;
+}
+
+.hero__info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin: 0 8rem;
+}
+
+.hero__info__content {
+    flex: 1 1 280px;
+}
+
+.hero__info__title {
+    color: #101828;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 8px;
+}
+
+.hero__info__description {
+    color: #667085;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 280px;
+}
+
+.hero__info__content h2 {
+    color: #8e2424;
+    font-weight: 600;
+    font-size: 60px;
+    margin-bottom: 12px;
+}
+
+/* Jobs */
+.jobs__text {
+    text-align: center;
+    margin-top: 196px;
+}
+
+.jobs__text img {
+    margin-top: 64px;
+    width: 100%;
+    max-width: 90vmax;
+}
+
+.jobs__info__content h3 {
+    color: #101828;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 64px 336px;
+}
+
+.jobs__info__description h4 {
+    color: #101828;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 56px 360px;
+}
+
+.jobs__info__salary {
+    display: flex;
+    margin: -24px 360px;
+}
+
+.jobs__info__salary p {
+    color: #667085;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0 24px 24px 0;
+}
+
+/* About */
+.about {
+    text-align: center;
+    margin: 186px 96px;
+}
+
+.about__text h2 {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.about__profile__name {
+    color: #101828;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.about__profile__job {
+    color: #667085;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 256px;
+}
+
+.footer__text__contact {
+    margin: 40px 0 32px 0;
+}
+
+.footer__text__contact input {
+    border: 1px solid #d0d5dd;
+    width: 360px;
+    height: 48px;
+    border-radius: 8px;
+    padding: 12px 20px;
+}
+
+.footer__text__contact a {
+    background: #8e2424;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin-left: 16px;
+    margin-top: 20px;
+}
+
+/* Media queries */
+
+@media (max-width: 1100px) {
+    .navbar,
+    .hero__info {
+        margin: 0 2rem;
+    }
+    .jobs__info__salary {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .description {
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 980px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .hero__text,
+    .jobs__text {
+        margin: 24px 0 36px;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+
+    #navbar__icon {
+        transition: 0.2s linear;
+    }
+
+    #navbar__icon.fa-times {
+        transform: rotate(180deg);
+    }
+
+    .navbar__list {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        top: 80px;
+        left: -100%;
+        padding: 0;
+
+        transition: all 0.5s;
+
+        display: block;
+        text-align: center;
+    }
+
+    .buttons {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        left: -100%;
+        top: calc((100% + 70%) / 2);
+
+        transition: all 0.5s;
+
+        display: block;
+        text-align: center;
+    }
+
+    #check:checked ~ .navbar__list {
+        left: 0;
+    }
+
+    #check:checked ~ .buttons {
+        left: 0;
+    }
+    .jobs__text {
+        margin-top: 196px;
+    }
+}
+
+@media (max-width: 920px) {
+    .hero__info {
+        text-align: center;
+    }
+    .hero__info__description {
+        width: 100%;
+    }
+    .jobs__info__content h3 {
+        margin: 64px 168px;
+    }
+    .jobs__info__description h4 {
+        margin: 56px 180px;
+    }
+    .jobs__info__salary {
+        margin: -24px 180px;
+    }
+    .about {
+        margin: 186px 2rem;
+    }
+}
+
+@media (max-width: 650px) {
+    h2 {
+        font-size: 34px;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+
+    .jobs__info__content h3 {
+        margin: 64px 2rem;
+    }
+    .jobs__info__description h4 {
+        margin: 64px 3rem;
+    }
+    .jobs__info__salary {
+        margin: -24px 3rem;
+    }
+    .about__text {
+        text-align: justify;
+    }
+    .about__text h2 {
+        font-size: 24px;
+    }
+    .about__profile {
+        text-align: center;
+    }
+}
